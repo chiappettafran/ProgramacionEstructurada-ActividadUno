@@ -48,21 +48,21 @@ public class PE_ActividadUno {
         num2 = Integer.parseInt(new Scanner(System.in).nextLine());
 
         System.out.print("Seleccioná la operación ( + , - , x , / ): ");
-        switch (new Scanner(System.in).nextLine()) {
+        switch (new Scanner(System.in).nextLine().charAt(0)) {
 
-            case "+":
+            case '+':
                 System.out.println("La SUMA es: " + (num1 + num2));
                 break;
 
-            case "-":
+            case '-':
                 System.out.println("La RESTA es: " + (num1 - num2));
                 break;
 
-            case "x":
+            case 'x':
                 System.out.println("El PRODUCTO es: " + (num1 * num2));
                 break;
 
-            case "/":
+            case '/':
                 if (num2 != 0) {
                     System.out.println("La DIVISION es: " + (num1 / num2));
                 } else {
